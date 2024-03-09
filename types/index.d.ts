@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-// 使用 declare 关键字声明的，这意味着它们可以在全局范围内使用，而不需要导入。
 // ====== USER PARAMS
 declare type CreateUserParams = {
   clerkId: string;
