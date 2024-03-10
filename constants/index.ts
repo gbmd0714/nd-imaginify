@@ -5,12 +5,12 @@ export const navLinks = [
     icon: "/assets/icons/home.svg",
   },
   {
-    label: "影像恢復",
+    label: "AI影像恢復",
     route: "/transformations/add/restore",
     icon: "/assets/icons/image.svg",
   },
   {
-    label: "生成填充",
+    label: "AI智能填充",
     route: "/transformations/add/fill",
     icon: "/assets/icons/stars.svg",
   },

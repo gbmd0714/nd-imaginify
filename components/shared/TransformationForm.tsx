@@ -22,7 +22,7 @@ import { CustomField } from "./CustomField";
 import { use, useEffect, useState, useTransition } from "react";
 import { AspectRatioKey, debounce, deepMergeObjects } from "@/lib/utils";
 import { updateCredits } from "@/lib/actions/user.actions";
-import { addImage, updateImage } from "@/lib/actions/image.action";
+import { addImage, updateImage } from "@/lib/actions/image.actions";
 import MediaUploader from "./MediaUploader";
 import TransformedImage from "./TransformedImage";
 import { getCldImageUrl } from "next-cloudinary";
@@ -300,7 +300,7 @@ const TransformationForm = ({
             disabled={isTransforming || newTransformation === null}
             onClick={onTransformHandler}
           >
-            {isTransforming ? "轉換中..." : "完成轉換"}
+            {isTransforming ? "轉換中..." : "开始轉換"}
           </Button>
           <Button type="submit" className="submit-button capitalize" disabled={isSubmitting}>
             {isSubmitting ? "正在提交..." : "保存圖片"}

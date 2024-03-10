@@ -50,7 +50,10 @@ export const dataUrl = `data:image/svg+xml;base64,${toBase64(shimmer(1000, 1000)
 
 // FORM URL QUERY
 export const formUrlQuery = ({ searchParams, key, value }: FormUrlQueryParams) => {
-  const params = { ...qs.parse(searchParams.toString()), [key]: value };
+  const params = {
+    ...qs.parse(searchParams.toString()),
+    [key]: value !== null ? value : "",
+  };
 
   return `${window.location.pathname}?${qs.stringify(params, {
     skipNulls: true,
